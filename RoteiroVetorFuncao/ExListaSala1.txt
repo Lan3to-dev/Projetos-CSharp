@@ -1,0 +1,29 @@
+início
+
+    inteiro vetor[5]
+    inteiro i, numero
+    lógico achou
+
+    achou = falso
+
+    para i de 0 até 4 faça
+        escreva("Digite um número: ")
+        leia(vetor[i])
+    fim para
+
+    escreva("Digite o número para procurar: ")
+    leia(numero)
+
+    para i de 0 até 4 faça
+        se vetor[i] == numero então
+            achou = verdadeiro
+        fim se
+    fim para
+
+    se achou == verdadeiro então
+        escreva("Número encontrado")
+    senão
+        escreva("Número não encontrado")
+    fim se
+
+fim
