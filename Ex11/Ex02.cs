@@ -1,11 +1,11 @@
 ﻿using System;
 using BibliotecaMatriz;
 
-class Ex01
+class Ex02
 {
     static void Main()
     {
-        int linhas, colunas, maior;
+        int linhas, colunas, menor;
 
         Console.Write("Digite o número de linhas da matriz: ");
         linhas = int.Parse(Console.ReadLine());
@@ -16,8 +16,8 @@ class Ex01
         int[,] matriz = new int[linhas, colunas];
 
         Matriz.lerMatriz(matriz);
-        maior = Matriz.maiorValor(matriz);
+        menor = Matriz.menorValor(matriz);
 
-        Console.WriteLine("Maior valor: " + maior);
+        Console.WriteLine("Menor valor: " + menor);
     }
 }
